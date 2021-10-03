@@ -1,2 +1,5 @@
-# tetris-info-page
- Project 1 for CSC130
+# CSC 130 - Project 1
+ By Ryan Nicholas Permana
+
+
+
