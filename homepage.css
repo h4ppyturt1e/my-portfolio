@@ -26,6 +26,17 @@ html {
     flex: 25%;
 }    
 
+#lato .row {
+    display: flex;
+    padding: 0 4px;
+}
+
+#lato .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
 body {
     font-family: 'Gemunu Libre', sans-serif;
     background-color: lightgrey;
@@ -113,6 +124,12 @@ h2 hr {
     margin-right: auto;
     position: absolute;
     font-size: xx-large;
+}
+
+#lato .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
 .right {
@@ -274,12 +291,25 @@ ul li a:hover {
         margin: 3px;
         border: 2px solid black;
     }
+
     #hobbies .row p {
         font-size: medium;
-
+        padding: 0px;
     }
 
     #hobbies .row h3 {
         font-size: x-large;
+    }
+
+    #lato .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #lato .column {
+        flex: 100%;
+        max-width: 100%;
     }
 }
