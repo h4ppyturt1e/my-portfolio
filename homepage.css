@@ -26,12 +26,12 @@ html {
     flex: 25%;
 }    
 
-#lato .row {
+#gallery .row {
     display: flex;
     padding: 0px 4px;
 }
 
-#lato .column {
+#gallery .column {
     flex: 25%;
     max-width: 25%;
     padding: 0px 4px;
@@ -126,7 +126,7 @@ h2 hr {
     font-size: xx-large;
 }
 
-#lato .column img {
+#gallery .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
@@ -301,12 +301,12 @@ ul li a:hover {
         font-size: x-large;
     }
 
-    #lato .row {
+    #gallery .row {
         padding: 0px;
         flex-wrap: wrap;
     }
     
-    #lato .column {
+    #gallery .column {
         flex: 50%;
         max-width: 50%;
         padding: 0px;
@@ -314,7 +314,7 @@ ul li a:hover {
 }
 
 @media screen and (max-width: 400px) {
-    #lato .column {
+    #gallery .column {
         flex: 100%;
         max-width: 100%;
     }
