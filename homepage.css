@@ -28,13 +28,13 @@ html {
 
 #lato .row {
     display: flex;
-    padding: 0 4px;
+    padding: 0px 4px;
 }
 
 #lato .column {
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0px 4px;
 }
 
 body {
@@ -301,9 +301,15 @@ ul li a:hover {
         font-size: x-large;
     }
 
+    #lato .row {
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+    
     #lato .column {
         flex: 50%;
         max-width: 50%;
+        padding: 0px;
     }
 }
 
