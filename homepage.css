@@ -5,6 +5,10 @@ html {
 
 * {margin: 0; padding: 0;}
 
+#main {
+    transform: translateY(4px);
+}
+
 #main .row {
     display: flex;
 }
@@ -29,7 +33,7 @@ body {
 
 p  {
     word-wrap: break-word;
-    padding-top: 10px;
+    padding: 10px 0px;
     text-align: center;
 }
 
@@ -58,7 +62,7 @@ h2 hr {
 #origin {
     min-height: 800px;
     box-sizing: border-box;
-    transform: translateY(-4px);
+    /* transform: translateY(-4px); */
 }
 
 #origin p {
@@ -74,13 +78,41 @@ h2 hr {
     min-width: 280px;
     width: 50%;
     left: 12.5%;
-}
+} 
 
 #origin img {
     right: 0;
     width: 25%;
     position: absolute;
     max-height: 945px;
+}
+
+#hobbies .row img {
+    width: 30%;
+    margin: 10px;
+    margin-right: auto;
+    border: 5px solid black;
+    position: relative;
+    left: 0;
+}
+
+#hobbies .row p {
+    width: 67%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    text-align: left;
+    font-size: xx-large;
+}
+
+#hobbies .row h3 {
+    width: 67%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    font-size: xx-large;
 }
 
 .right {
@@ -105,7 +137,7 @@ ul.container {
     list-style-type: none;
     overflow: hidden;
     background-color: #333;
-    transform: translateY(-4px);
+    /* transform: translateY(-4px); */
 }
 
 .container li {
@@ -134,7 +166,7 @@ li.dropdown {
     display: none;
     position: absolute;
     width: 100%;
-    z-index: 9;
+    z-index: 999;
     justify-content: center;
 }
 
@@ -201,12 +233,14 @@ ul li a:hover {
     bottom: 0;
     opacity: 0.4;
     border-radius: 50%; 
+    right: 0;
 }
 
 .fa-arrow-up:hover {
     background-color: rgb(187, 183, 183);
     opacity: 0.7;
 }
+
 @media screen and (max-width: 800px)  {
     #origin p {
         width: 100%;
@@ -234,5 +268,18 @@ ul li a:hover {
         min-width: 0px;
         width: 60%;
         left: 20%;
+    }
+    
+    #hobbies .row img {
+        margin: 3px;
+        border: 2px solid black;
+    }
+    #hobbies .row p {
+        font-size: medium;
+
+    }
+
+    #hobbies .row h3 {
+        font-size: x-large;
     }
 }
