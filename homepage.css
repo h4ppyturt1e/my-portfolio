@@ -1,12 +1,14 @@
+* {margin: 0; padding: 0;}
+
 html {
     scroll-behavior: smooth;
     transition: 0.2s;
 }
 
-* {margin: 0; padding: 0;}
-
 #main {
-    transform: translateY(4px);
+    background-color: #333;
+    /* transform: translateY(1px); */
+    box-sizing: border-box;
 }
 
 #main .row {
@@ -130,6 +132,7 @@ h2 hr {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    border: 2px solid grey;
 }
 
 .right {
@@ -167,6 +170,7 @@ ul.container {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -185,6 +189,7 @@ li.dropdown {
     width: 100%;
     z-index: 999;
     justify-content: center;
+    transition: 0.3s;
 }
 
 .dropdown-content a {
@@ -203,7 +208,8 @@ li.dropdown {
     width: 30px;
     height: 30px;
     margin: 2px;
-    border-radius: 100%
+    border-radius: 100%;
+    transition: 0.3s;
   }
 
 .fa:hover, .fab:hover{
@@ -318,4 +324,24 @@ ul li a:hover {
         flex: 100%;
         max-width: 100%;
     }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: lightgrey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(42, 42, 42);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
 }
