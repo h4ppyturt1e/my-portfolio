@@ -1,3 +1,7 @@
+body {
+    margin: 0px 8px;
+}
+
 #gallery .row {
     display: flex;
     padding: 0px 4px;
